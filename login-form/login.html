@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-form.css">
+    <script src="login-form.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <!-- Login Form -->
+    <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" required>
+                <span class="error" id="loginEmailError">Enter a valid email.</span>
+            </div>
+    
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required>
+                <span class="error" id="loginPasswordError">Password is required.</span>
+            </div>
+    
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+<!--script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script-->
+</html>
